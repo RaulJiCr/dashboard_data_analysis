@@ -5,3 +5,4 @@ __pycache__/
 */.venv/
 .streamlit/secrets.toml
 *.pyc
+dashboard_preview.png
