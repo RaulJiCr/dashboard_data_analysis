@@ -33,7 +33,7 @@ Cada equipo entrega:
 - una pregunta principal de analisis;
 - un mini reporte metodologico;
 - un dashboard Streamlit adaptado desde la plantilla;
-- una presentacion corta con hallazgos, interpretacion y limitaciones.
+- una presentacion corta con hallazgos, interpretacion, decisiones visuales y limitaciones.
 
 ## Estructura sugerida del curso express
 
@@ -247,6 +247,7 @@ Principios de diseno:
 - evitar saturacion visual;
 - usar nombres comprensibles para variables;
 - separar resultados descriptivos de predicciones.
+- usar color con significado constante, no como decoracion.
 
 Preguntas para revisar dashboards:
 
@@ -255,6 +256,45 @@ Preguntas para revisar dashboards:
 - Se entiende que datos se filtraron?
 - Hay alguna grafica redundante?
 - El usuario puede distinguir dato observado, prediccion y cluster?
+- El significado de los colores es consistente?
+
+### Bloque 8. Color y presentacion visual
+
+Objetivo: que los estudiantes usen color para comunicar datos con claridad y no solo para hacer la pantalla mas llamativa.
+
+Material de apoyo:
+
+```text
+guia_color_visualizacion_datos.md
+```
+
+Ideas clave para explicar:
+
+- El color debe tener significado: categoria, intensidad, alerta, exito o contexto.
+- Una paleta corta suele comunicar mejor que una paleta con muchos colores.
+- El mismo color debe significar lo mismo en todo el dashboard.
+- Los colores fuertes se reservan para lo importante.
+- Rojo, verde y naranja deben usarse con cuidado porque sugieren juicio o alerta.
+- No se debe depender solo del color: tambien usar etiquetas, ordenamiento y texto.
+
+Actividad sugerida:
+
+Pedir a cada equipo que documente su paleta:
+
+| Elemento | Color | Significado |
+| --- | --- | --- |
+| Principal | Azul | metrica central |
+| Alerta | Naranja | valor que requiere atencion |
+| Problema | Rojo | resultado debajo del umbral |
+| Contexto | Gris | informacion secundaria |
+
+Antes de presentar, cada equipo debe responder:
+
+- Que color guia la lectura principal?
+- Que color indica alerta?
+- Hay algun color que se use con significados distintos?
+- La grafica se entiende si se imprime en blanco y negro?
+- El texto se lee bien sobre el fondo?
 
 ## Rubrica sugerida
 
@@ -267,6 +307,7 @@ Preguntas para revisar dashboards:
 | Modelo | Evalua e interpreta errores | Entrena y reporta metrica | Sin evaluacion clara |
 | Clustering | Perfiles interpretados con cautela | Clusters mostrados | Clusters sin explicacion |
 | Dashboard | Claro, funcional y enfocado | Funcional con exceso de elementos | Dificil de entender |
+| Diseno visual | Paleta consistente y legible | Colores aceptables pero poco justificados | Colores confusos o decorativos |
 | Comunicacion | Hallazgos con evidencia y limites | Resumen general | Conclusiones no sustentadas |
 
 ## Guion para los profesores
@@ -296,6 +337,7 @@ Cada equipo presenta:
 - dos features importantes;
 - metrica del modelo y principal error;
 - significado de los clusters;
+- justificacion de la paleta de color;
 - una limitacion seria;
 - una mejora futura.
 
